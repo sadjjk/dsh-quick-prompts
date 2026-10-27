@@ -1,0 +1,5 @@
+# dsh-quick-prompts cordis patch
+# 插件自身 — host 半数据面 route + client 半 configForms 配置卡与独立 / source
+- insert:
+    - id: dsh-quick-prompts
+      name: dsh-quick-prompts
