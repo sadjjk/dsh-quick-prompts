@@ -2,6 +2,6 @@
   "id": "dsh-quick-prompts",
   "name": "快捷指令 Quick Prompts",
   "description": "快捷指令：敲 /缩写 展开为预设文本。Quick Prompts: type /alias to expand preset text.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "claw"
 }

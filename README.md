@@ -37,7 +37,16 @@ DSH 桌面版：插件管理 → 添加插件 → 输入仓库地址 `https://gi
 |---|---|
 | 回车行为 | 追加后发送（默认）：展开后立即发送；追加到草稿：展开后留在草稿（末尾带空格），方便接着改 |
 
-指令列表与调用次数保存在 `~/.dsh/quick-prompts/data.json`。
+指令列表与调用次数保存在 `~/.dsh/dsh-quick-prompts/data.json`。该文件损坏（不是合法 JSON 或结构不对）时，插件会把它改名为 `data.json.corrupt-<时间戳>` 留在同一目录，再显示内置默认指令；需要找回时把备份改回 `data.json` 即可。
+
+## 从 0.1.0 升级
+
+数据目录从 `~/.dsh/quick-prompts/` 改为 `~/.dsh/dsh-quick-prompts/`，新版本不读旧路径。升级前先关闭插件，再移动数据文件：
+
+    mkdir -p ~/.dsh/dsh-quick-prompts
+    mv ~/.dsh/quick-prompts/data.json ~/.dsh/dsh-quick-prompts/data.json
+
+不移动的话，新版本会显示内置默认指令；旧文件不会被改动，之后随时可以按上面的命令移过去（会覆盖新路径下已有的文件）。
 
 ## 许可
 

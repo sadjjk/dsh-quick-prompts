@@ -1,7 +1,7 @@
 {
   "name": "dsh-quick-prompts",
   "description": "快捷指令 Quick Prompts：敲 /缩写 展开为预设文本，追加到草稿。Type /alias to expand preset text.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
